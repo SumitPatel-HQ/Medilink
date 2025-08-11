@@ -1,8 +1,87 @@
-# SPEC-1: MediLink - Medical Appointment and Health Record System
 
-## Background
+# MediLink - Medical Appointment and Health Record System
 
-The MediLink project is designed as an 8-day educational workshop where students build an end-to-end medical appointment and health record management application. The focus is on introducing core software engineering principles, Git version control, and full-stack development using MERN for backend and web frontend, and Kotlin Composable for mobile development. The project is designed to parallelize backend, web, and mobile development efforts, simulating a real-world development workflow.
+MediLink is a full-stack web and mobile application for managing medical appointments and health records. It enables patients to book appointments, upload and scan medical reports, and manage their health data, while doctors can manage appointments and view patient records. Built with Node.js, Express.js, MongoDB, Next.js (React), and Kotlin (mobile), MediLink is designed for educational and real-world healthcare scenarios.
+
+## Features
+- User authentication and role management (Patient, Doctor)
+- Book and manage doctor appointments
+- Upload and scan medical reports (OCR-based text extraction)
+- Web frontend (Next.js/React) and mobile frontend (Kotlin)
+- REST API backend (Node.js, Express.js, MongoDB)
+- Role-based dashboards and profile management
+- Appointment status tracking and history
+
+
+---
+
+## Setup Instructions
+
+### Prerequisites
+- Node.js (v18 or above recommended)
+- npm (v9 or above)
+- MongoDB (local or cloud instance)
+
+### 1. Clone the repository
+```sh
+git clone https://github.com/SumitPatel-HQ/Medilink.git
+cd Medilink
+```
+
+### 2. Install dependencies
+#### Backend
+```sh
+cd backend
+npm install
+```
+#### Frontend (Web)
+```sh
+cd ../web
+npm install
+```
+
+### 3. Configure environment variables
+- Copy `backend/.env.example` to `backend/.env` and update MongoDB URI and other secrets as needed.
+
+### 4. Start the servers
+#### Start Backend
+```sh
+cd backend
+npm start
+```
+#### Start Frontend (Web)
+```sh
+cd web
+npm run dev
+```
+
+The web app will be available at [http://localhost:3000](http://localhost:3000).
+
+---
+
+## Usage Examples
+
+### 1. Sign Up & Login
+- Access the web app at [http://localhost:3000](http://localhost:3000)
+- Register as a patient or doctor
+- Log in to access your dashboard
+
+### 2. Book an Appointment (Patient)
+- Go to the Appointments section
+- Select a doctor and available time slot
+- Confirm booking
+
+### 3. Manage Appointments (Doctor)
+- Log in as a doctor
+- View upcoming appointments
+- Update appointment status (confirm/cancel)
+
+### 4. Upload Medical Reports
+- Navigate to the Reports section
+- Upload a PDF or image file
+- View extracted text using OCR
+
+---
 
 ## Requirements
 
