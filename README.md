@@ -231,30 +231,7 @@ medilink/
 
 
 
-+-------------------+        +----------------------+        +------------------------+
-|                   |        |                      |        |                        |
-|  Farmer Mobile App +------->+  Backend Server      +------->+  Data Validation & MRL  |
-|  (Offline Capable) |  Data  |  (Node.js + MongoDB) | Data   |  Compliance Check      |
-|                   |        |                      |        |  (including blockchain)|
-+---------+---------+        +-----------+----------+        +------------+-----------+
-          |                               |                                |
-          | Alerts/Notifications          | Alerts & Logs                  | Alerts (Withdrawal Periods)
-          v                               v                                v
-+---------+---------+        +-----------+----------+        +------------+-----------+
-|                   |        |                      |        |                        |
-| Veterinarian Portal+<-------+ Prescription Upload  |        |  Real-time Dashboards  |
-|                   |        |  & Verification      |        |  (AMU Trends, MRL Score)|
-+---------+---------+        +----------------------+        +------------+-----------+
-          |                                                             |
-          |                                                             v
-          +-----------------------------+                   +------------------+
-                                        |                   |                  |
-                                +-------v---------+         |  Regulator /     |
-                                |                 |         |  Authority Portal|
-                                | Alert & Report  +<--------+  Compliance      |
-                                | Generation      |  Data   |  Monitoring      |
-                                |                 |         |                  |
-                                +-----------------+         +------------------+
+
 
 ### Testing Guidelines
 
